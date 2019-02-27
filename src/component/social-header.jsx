@@ -1,49 +1,37 @@
 import React, { Component } from "react";
+import Icons from "./icons";
 
 class SocialHeaders extends Component {
   state = {};
+  getHelloInDifferentLanguage = () => {
+    return "Hello | Bonjour | Hola | Ola | Hej | Guten tag | Ciao | Jo Napot | Czesc ";
+  };
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-        <a className="navbar-brand" href="#">
-          Travel
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-
         <div className="collapse navbar-collapse">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About
-              </a>
-            </li>
-          </ul>
-          <div className="form-inline" />
+          <div className="container">
+            <div className="row" />
+            <div className="row" />
+            <div className="row">
+              <div className="form-inline text-white">
+                {this.getHelloInDifferentLanguage()}
+              </div>
+            </div>
+          </div>
+
+          <div className="form-inline">
+            <Icons
+              classes="material-icons white pr-3"
+              iconName="favorite_border"
+            />
+            <Icons classes="material-icons white pr-3" iconName="adjust" />
+            <Icons classes="material-icons white pr-3" iconName="cloud_queue" />
+            <Icons
+              classes="material-icons white pr-3"
+              iconName="photo_filter"
+            />
+          </div>
         </div>
       </nav>
     );
