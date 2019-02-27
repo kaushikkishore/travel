@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SocialHeader from "./social-header";
-import Carousel from "./carousel";
+import CompanyCarousel from "./company-carousel";
 import CompanyHeader from "./comapny-header";
 import OurFeatures from "./our-features";
 import ApplicationDetails from "./application-details";
@@ -15,7 +15,7 @@ class AppRender extends Component {
       <React.Fragment>
         <SocialHeader />
         <CompanyHeader />
-        <Carousel />
+        <CompanyCarousel />
         <OurFeatures />
         <ApplicationDetails />
         <LandingPageNavigator />

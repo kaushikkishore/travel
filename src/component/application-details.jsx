@@ -3,7 +3,7 @@ class ApplicationDetails extends Component {
   state = {};
   render() {
     return (
-      <div class="card bg-success text-white">
+      <div className="card bg-success text-white">
         <svg
           className="bd-placeholder-img bd-placeholder-img-lg card-img"
           width="100%"

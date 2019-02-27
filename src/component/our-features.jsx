@@ -7,8 +7,8 @@ class OurFeatures extends Component {
     };
     return (
       <React.Fragment>
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             <div className="card col-sm" style={divStyle}>
               <svg
                 className="bd-placeholder-img card-img-top"
