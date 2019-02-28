@@ -65,3 +65,11 @@
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
+
+img.resize {
+  width: 50%; /* you can use % */
+  height: auto;
+}
+.carousel .carousel-item {
+  height: 500px;
+}
