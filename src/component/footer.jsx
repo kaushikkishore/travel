@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer mt-auto py-3">
-        <div className="container">
+        <div className="container text-center">
           <span className="text-muted">{footerText}</span>
         </div>
       </footer>

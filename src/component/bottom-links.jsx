@@ -1,39 +1,41 @@
 import React, { Component } from "react";
-import { HeaderAndContent, Link} from "./common"
+import { HeaderAndLabelRows, ImageAndLabelRows, RowsOfLinks, Link} from "./common"
+
+const logobw = require('../db/images/logo_bw.PNG');
 
 const ContactInfoContent = () =>
   <div className="row">
-    <HeaderAndContent header='ADDRESS' content={['L4-06, 3rd Floor, Sky Walk, 5/1,', 'Assaye Road, Ulsoor,', 'Bangalore-560042,', 'Karnataka, India.']}  className="col-md-6"/>
-    <HeaderAndContent header='CONTACT' content={['+91 97401 49327', '+91 93417 15545']}/>
-    <HeaderAndContent header='EMAIL' content={['sales@eurolinkworldwide.com', 'contact@eurolinkworldwide.com']}/>
+    <HeaderAndLabelRows header="ADDRESS" content={['L4-06, 3rd Floor, Sky Walk, 5/1,', 'Assaye Road, Ulsoor,', 'Bangalore-560042,', 'Karnataka, India.']} passClass="col-5" />
+    <HeaderAndLabelRows header="CONTACT" content={['+91 97401 49327', '+91 93417 15545']} passClass="col-3" />
+    <HeaderAndLabelRows header="EMAIL" content={['sales@eurolinkworldwide.com', 'contact@eurolinkworldwide.com']} passClass="col-4" />
   </div>
 
 const ContactInfo = () =>
-  <div className="col-md-6">
-    <h5>CONTACT INFO</h5>
+  <>
+    <div className='row'>
+      <h5>CONTACT INFO</h5>
+    </div>
     <ContactInfoContent />
-  </div>
+  </>
+
+
+const LogoCaption = () =>
+    <ImageAndLabelRows imgSrc={logobw} content={['Adsasdasdaas dasdsankdn kasndklnasklndndl kasndlknaknd', 'Tasondnas sdaonosndoan sdaoidasoin, adsasdasdaas dasdsankdn kasndklnasklndndl kasndlknaknd']}/>
 
 const UsefulLinks = () =>
-  <div className="col-md-6">
-    <h5>USEFUL LINKS</h5>
-    <div className="row">
-      <div className="col-md-6">
-        <Link name={'Home'} /><br/>
-        <Link name={'Services'} /><br/>
-        <Link name={'Experiences'} /><br/>
-        <Link name={'About'} /><br/>
-        <Link name={'Contact'} />
+  <>
+    <div className='row'>
+      <h5>USEFUL LINKS</h5>
+    </div>
+    <div className='row'>
+      <div className="col-6">
+        <RowsOfLinks content={['Home', 'Services', 'Experiences', 'About', 'Contact']}/>
       </div>
-      <div className="col-md-6">
-        <Link name={'Rail Tours'} /><br/>
-        <Link name={'Van Tours'} /><br/>
-        <Link name={'Group Tours'} /><br/>
-        <Link name={'Educational Tours'} /><br/>
-        <Link name={'Pilgrimage Tours'} />
+      <div className="col-6">
+        <RowsOfLinks content={['Rail Tours', 'Van Tours', 'Group Tours', 'Educational Tours', 'Pilgrimage Tours']}/>
       </div>
     </div>
-  </div>
+  </>
 
 class BottomLinks extends Component {
   state = {};
@@ -42,8 +44,15 @@ class BottomLinks extends Component {
       <React.Fragment>
         <div className="container-fluid bg-dark">
           <div className="row">
-            <ContactInfo />
-            <UsefulLinks />
+            <LogoCaption />
+          </div>
+          <div className="row">
+            <div className="col-5 offset-2">
+              <ContactInfo />
+            </div>
+            <div className="col-3">
+              <UsefulLinks />
+            </div>
           </div>
         </div>
       </React.Fragment>

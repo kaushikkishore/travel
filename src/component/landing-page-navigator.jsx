@@ -3,14 +3,30 @@ class LandingPageNavigator extends Component {
   state = {};
   render() {
     return (
-      <div className="card text-white bg-success mb-12">
-        <div className="card-header">Header</div>
-        <div className="card-body">
-          <h5 className="card-title">Success card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <div>
+        <div className="row text-center">
+          <h1 className="mx-auto">WHY CHOOSE US</h1>
+        </div>
+        <div className="row">
+          
+        </div>
+        <div className="row">
+          <div className="col-8 offset-2">
+            <div className="row">
+                <h3>HUHSHA SADIJJ SADJOJIJASD DSADJIASDI ASDASD</h3>
+            </div>
+            <div className="row">
+                <h3>SDDASDIASJ SDJAOJDIAS ASDJIAJSD ASDJIASJDI</h3>
+            </div>
+            <div className="row">
+            <button
+              className="btn btn-outline-primary my-2 my-sm-0"
+              type="submit"
+            >
+              BOOK NOW
+            </button>
+            </div>
+          </div>
         </div>
       </div>
     );
