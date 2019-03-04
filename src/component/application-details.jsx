@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import WhyUsCard from "./why-us-card";
+import { whyUsDB } from "../db/why_us";
+
 class ApplicationDetails extends Component {
   state = {};
   render() {
@@ -7,7 +10,7 @@ class ApplicationDetails extends Component {
         <svg
           className="bd-placeholder-img bd-placeholder-img-lg card-img"
           width="100%"
-          height="270"
+          height="500"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid slice"
           focusable="false"
@@ -20,13 +23,19 @@ class ApplicationDetails extends Component {
             Card image
           </text>
         </svg>
+
         <div className="card-img-overlay">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p className="card-text">Last updated 3 mins ago</p>
+          <h1 className="card-title text-center">Why Choose Us</h1>
+          <div className="container">
+            <div className="row set-height-100" />
+          </div>
+          <div className="container">
+            <div className="row">
+              {whyUsDB.map(item => (
+                <WhyUsCard heading={item.Heading} content={item.Content} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
