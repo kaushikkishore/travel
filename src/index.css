@@ -12,3 +12,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.footer {
+  background-color: #1d1e25;
+}
+
+.white-link button {
+  color: #ffffff;
+}
+
+.white-link button:hover {
+  color: #ffffff;
+}
+
+.button-left-padding-nil button {
+  padding-left: 0;
+}
+
+.blue {
+  color: #2780ff;
+}
+
+.grey-background {
+  background-color: #32343f;
+}
+
+

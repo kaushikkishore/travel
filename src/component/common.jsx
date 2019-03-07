@@ -3,7 +3,7 @@ import React, { Component } from "react";
 const HeaderAndLabelRows = props => {
     
     return (
-        <div className={"col " + props.passClass}>
+        <div className={props.classes}>
             <h6 className="row">{props.header}</h6>
             <RowsOfLabels content={props.content} />
         </div>
@@ -17,7 +17,7 @@ const RowsOfLabels = props => {
         <>
         {props.content.map(item => {
             return (
-                <label className='row'>{item}</label>
+                <label className="row">{item}</label>
             );
         })}
         </>
@@ -29,7 +29,7 @@ const ListOfSpans = props => {
         <>
         {props.content.map(item => {
             return (
-                <div className='text-center'>
+                <div className={props.classes}>
                     <span>{item}</span>
                 </div>
             );
@@ -43,7 +43,7 @@ const RowsOfLinks = props => {
         <>
         {props.content.map(item => {
             return (
-                <div className='row'>
+                <div className={props.classes}>
                     <Link name={item} />
                 </div>
             );
@@ -56,10 +56,12 @@ const RowsOfLinks = props => {
 const Link = props => <button type="button" className="btn btn-link btn-sm">{props.name}</button>
 
 const ImageAndLabelRows = props => 
-    <div className="container">
-        <img src={props.imgSrc} className="row mx-auto" ></img>
-        <ListOfSpans content={props.content} />
-    </div>
+    <>
+        <div className="row">
+            <img src={props.imgSrc} className={props.classes} />
+        </div>
+        <ListOfSpans content={props.content} classes={props.classes}/>
+    </>
 
 export {
     HeaderAndLabelRows,
