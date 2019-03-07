@@ -37,6 +37,9 @@
 }
 
 /* Rules for sizing the icon. */
+.material-icons.md-12 {
+  font-size: 12px;
+}
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -115,4 +118,77 @@ img.resize {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+}
+
+img.company-logo {
+  width: 70%;
+  height: auto;
+}
+
+.logo-align {
+  padding-left: 4.8%;
+}
+
+ul.company-menu {
+  overflow-x: hidden;
+  white-space: nowrap;
+  height: 1em;
+  width: 100%;
+}
+
+li.company-menu-li {
+  display: inline;
+}
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 14px;
+}
+.font-lg {
+  font-size: 18px;
+}
+.font-xlg {
+  font-size: 24px;
+}
+.font-super {
+  font-size: 36px;
+}
+.image-container {
+  position: relative;
+}
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: block;
+  background: rgba(0, 123, 255, 0.6);
+}
+
+.image-container .image-caption {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+}
+.bar {
+  height: 10px;
+  width: 22%;
+}
+.bar.yellow {
+  background: rgba(255, 255, 0, 1);
+}
+.blue.bar {
+  background: rgba(0, 0, 255, 1);
+}
+.place-name-caption {
+}
+
+.place-description {
 }

@@ -32,7 +32,11 @@ class ApplicationDetails extends Component {
           <div className="container">
             <div className="row">
               {whyUsDB.map(item => (
-                <WhyUsCard heading={item.Heading} content={item.Content} />
+                <WhyUsCard
+                  key={item.Id}
+                  heading={item.Heading}
+                  content={item.Content}
+                />
               ))}
             </div>
           </div>

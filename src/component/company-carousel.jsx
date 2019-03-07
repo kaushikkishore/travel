@@ -1,48 +1,34 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { CarouselSource } from "../db/carousel-db";
 
 class CompanyCarousel extends Component {
   state = {};
   render() {
     return (
       <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 mx-auto"
-            src="/img/a.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 mx-auto"
-            src="/img/b.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 mx-auto"
-            src="/img/c.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {CarouselSource.map(item => (
+          <Carousel.Item key={item.id}>
+            <div className="image-container">
+              <img
+                className="d-block w-100 mx-auto"
+                src={item.src}
+                alt={item.alt}
+              />
+              <div className="after" />
+              <div className="image-caption">
+                <div className="yellow bar" />
+                <div className="font-super font-weight-bold place-name-caption pl-3 pr-3">
+                  {item.heading}
+                </div>
+                <div className="blue bar" />
+                <div className="font-xlg font-weight-bold place-description">
+                  {item.description}
+                </div>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
       </Carousel>
     );
   }

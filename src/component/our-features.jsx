@@ -7,129 +7,49 @@ class OurFeatures extends Component {
     };
     return (
       <React.Fragment>
-        <div className="container">
-          <div className="row">
-            <div className="card col-sm" style={divStyle}>
-              <svg
-                className="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96" />
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                  Image cap
-                </text>
-              </svg>
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        <div className="card text-dark">
+          <svg
+            className="bd-placeholder-img bd-placeholder-img-lg card-img"
+            width="100%"
+            height="600"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            role="img"
+            aria-label="Placeholder: Card image"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#F3F3F3" />
+            <image
+              xlinkHref="/img/tower1.png"
+              x="75%"
+              y="0"
+              height="100%"
+              width="20%"
+            />
+            <image
+              xlinkHref="/img/tower2.png"
+              x="0"
+              y="0"
+              height="100%"
+              width="20%"
+            />
+          </svg>
+          <div className="card-img-overlay">
+            <h1 className="card-title text-center">HELLO FOLKS!</h1>
+            <div className="container">
+              <div className="row set-height-100" />
             </div>
-
-            <div className="card col-sm" style={divStyle}>
-              <svg
-                className="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96" />
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                  Image cap
-                </text>
-              </svg>
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-
-            <div className="card col-sm" style={divStyle}>
-              <svg
-                className="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96" />
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                  Image cap
-                </text>
-              </svg>
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-
-            <div className="card col-sm" style={divStyle}>
-              <svg
-                className="bd-placeholder-img card-img-top"
-                width="100%"
-                height="180"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Image cap"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96" />
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                  Image cap
-                </text>
-              </svg>
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div className="container">
+              <div className="row">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z" />
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z" />
-          </svg>
         </div>
       </React.Fragment>
     );
